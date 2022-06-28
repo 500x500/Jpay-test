@@ -1,13 +1,13 @@
 <mat-card [formGroup]="driverForm">
-    <mat-form-field appearance="outline">
-      <mat-label>Surname</mat-label>
-      <input matInput placeholder="Surname" formControlName="surname"/>
-    </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Surname</mat-label>
+    <input matInput placeholder="Surname" formControlName="surname"/>
+  </mat-form-field>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Name</mat-label>
-      <input matInput placeholder="Name"  formControlName="name"/>
-    </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name"  formControlName="name"/>
+  </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Birth date</mat-label>
@@ -19,8 +19,5 @@
     <input matInput placeholder="e-mail"  formControlName="email"/>
   </mat-form-field>
 
-  <mat-form-field appearance="outline">
-    <mat-label>e-mail</mat-label>
-    <mat-slide-toggle formControlName="active">Active</mat-slide-toggle>
-  </mat-form-field>
+  <mat-slide-toggle formControlName="active">Active</mat-slide-toggle>
 </mat-card>
