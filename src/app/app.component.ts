@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jitPay';
+  constructor(
+    private router: Router,
+  ) {}
+  title = 'JitPay';
+  Links = ['Drivers', 'Vehicles']
+  activeLink: string = '';
+
+  routeToLink(link: string): void {
+    this.router.navigate([link.toLowerCase()]);
+    this.activeLink = link;
+  }
 }
